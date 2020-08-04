@@ -781,6 +781,11 @@ textarea.form-control {
   .media img {
     margin-bottom: 10px;
   }
+
+  .brandon{
+    display: none;
+  }
+
 }
 
 @media (max-width: 400px) {
@@ -790,6 +795,10 @@ textarea.form-control {
   .media img {
     margin-bottom: 10px;
   }
+
+  .brandon{
+    display: none;
+  }
 }
 
 @media (max-width: 767px) {
@@ -798,6 +807,10 @@ textarea.form-control {
   }
   .media img {
     margin-bottom: 10px;
+  }
+
+  .brandon{
+    display: none;
   }
 }
 
@@ -818,7 +831,23 @@ textarea.form-control {
 .landing-section{
   height: 100vh;
   padding: 100px 0 100px;
+  
+ 
 }
+
+.background {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("../images/test.jpg") center center;
+  opacity: .6;
+  background-size: contain;
+  
+}
+
 
 .brandon img:hover{
   -webkit-animation: bounce-top 1s both;
@@ -863,6 +892,7 @@ textarea.form-control {
   z-index: 0;
   transform: skewY(5deg);
   transform-origin: top left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .service-section{
@@ -886,6 +916,12 @@ textarea.form-control {
   color:  #0353A4;
 }
 
+.service-item p{
+  
+  text-align: left;
+  z-index: 1;
+  padding-left: 4rem;
+}
 .service-item p:hover{
   color: white;
 }
@@ -906,13 +942,26 @@ textarea.form-control {
 }
 
 .promo-banner{
-  border-radius: 30px;
+  height: 10rem;
+  width: 100%;
   background-color: #0353A4;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+  
 }
 
-.promo-banner h2:hover{
-  -webkit-animation: bounce-top 1s both;
-	animation: bounce-top 1s both;
+.promo-banner .conditions{
+  font-size: x-small;
+  font-style: italic;
+  text-align: center;
+  
+}
+
+.promo-banner .btn{
+  border-radius: 2rem;
+}
+.promo-banner h2{
+  color: gold;
 }
 
 .why-section h2{
